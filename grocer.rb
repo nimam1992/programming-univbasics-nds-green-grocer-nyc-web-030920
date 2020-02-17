@@ -40,9 +40,9 @@ while counter < coupons.length
       cart_item[:count] -= coupons[counter][:num]
     else
       ciwc = {
-        :item => cin
-        :price => coupons[counter][:cost] / coupons[:counter][:num]
-        :count => coupons[counter][:num]
+        :item => cin,
+        :price => coupons[counter][:cost] / coupons[:counter][:num],
+        :count => coupons[counter][:num],
         :clearance => cart_item[:clearance]
       }
       cart << ciwc
