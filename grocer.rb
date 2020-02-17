@@ -58,7 +58,7 @@ def apply_clearance(cart)
 counter = 0
 while counter < cart
   if cart[counter][:clearance] = true
-    cart[counter][:price]*=20%
+    cart[counter][:price] = (cart[counter][:price] - cart[counter][:price] * .20).round
   end
   cart
 end
