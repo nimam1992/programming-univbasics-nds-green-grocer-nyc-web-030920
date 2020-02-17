@@ -49,7 +49,7 @@ while counter < coupons.length
       cart_item[:count] -= coupons[counter][:num]
       end
     end
-    count+=1
+    counter+=1
   end
   cart
 end
