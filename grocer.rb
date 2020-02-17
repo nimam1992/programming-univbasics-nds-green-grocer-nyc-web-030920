@@ -39,7 +39,19 @@ while counter < coupons.length
       ciwc[:count] += coupons[counter][:num]
       cart_item[:count] -= coupons[counter][:num]
     else
-      cart_i
+      ciwc = {
+        :item => cin
+        :price => coupons[counter][:cost] / coupons[:counter][:num]
+        :count => coupons[counter][:num]
+        :clearance => cart_item[:clearance]
+      }
+      cart << ciwc 
+      cart_item[:count] -= coupons[counter][:num]
+      end
+    end
+    count+=1
+  end
+  cart
 end
 
 def apply_clearance(cart)
