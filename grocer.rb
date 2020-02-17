@@ -45,7 +45,7 @@ while counter < coupons.length
         :count => coupons[counter][:num]
         :clearance => cart_item[:clearance]
       }
-      cart << ciwc 
+      cart << ciwc
       cart_item[:count] -= coupons[counter][:num]
       end
     end
